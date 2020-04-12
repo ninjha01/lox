@@ -1,5 +1,7 @@
 package com.ninjha01.lox;
 
+import com.ninjha01.lox.TokenType;
+
 class Token {
     final TokenType type;
     final String lexeme;
