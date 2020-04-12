@@ -1,6 +1,4 @@
-package com.ninjha01.lox;
-
-import com.ninjha01.lox.TokenType;
+package lox;
 
 class Token {
     final TokenType type;

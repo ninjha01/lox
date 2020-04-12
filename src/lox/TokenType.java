@@ -1,4 +1,4 @@
-package com.ninjha01.lox;
+package lox;
 
 enum TokenType {
     // Single char tokens

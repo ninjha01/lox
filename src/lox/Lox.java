@@ -1,4 +1,4 @@
-package com.ninjha01.lox;
+package lox;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-import com.ninjha01.lox.Scanner;
+import lox.Scanner;
+import lox.Token;
+
 
 public class Lox {
     static boolean hadError = false;
