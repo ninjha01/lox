@@ -8,6 +8,11 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
   void interpret(List<Stmt> statements) {
     try {
       for (Stmt statement : statements) {
+        if (statement instanceof Stmt.Expression) {
+          Stmt.Expression stmt = (Stmt.Expression) statement;
+          Object value = evaluate(stmt.expression);
+          System.out.println(stringify(value));
+        }
         execute(statement);
       }
     } catch (RuntimeError error) {
